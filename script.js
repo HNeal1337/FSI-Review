@@ -19,3 +19,12 @@ let catVoteBtn = document.createElement("button")
 catVoteBtn.textContent = "vote for Catto"
 
 animals[1].append(catVoteBtn)
+
+let catVotesCell = document.querySelector("#catto-votes")
+
+catVoteBtn.addEventListener('click', function(e) {
+    let catVotesCount = parseInt(catVotesCell.textContent);
+    catVotesCount = catVotesCount + 1;
+    catVotesCell.textContent = catVotesCount;
+    localStorage.setItem('cat-votes',dogVotesCount);
+});
