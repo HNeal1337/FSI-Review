@@ -8,8 +8,9 @@ animals[0].append(dogVoteBtn)
 
 let dogVotesCell = document.querySelector("#doggo-votes");
 
-dogVoteBtn.addEventListener('click', function(e)  {
+dogVoteBtn.addEventListener('click', function(e) {
     let dogVotesCount = parseInt(dogVotesCell.textContent);
     dogVotesCount = dogVotesCount + 1;
-    dogVotesCount.textContent = dogVotesCount;
+    dogVotesCell.textContent = dogVotesCount;
 });
+
