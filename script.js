@@ -12,5 +12,10 @@ dogVoteBtn.addEventListener('click', function(e) {
     let dogVotesCount = parseInt(dogVotesCell.textContent);
     dogVotesCount = dogVotesCount + 1;
     dogVotesCell.textContent = dogVotesCount;
+    localStorage.setItem('dog-votes',dogVotesCount);
 });
 
+let catVoteBtn = document.createElement("button")
+catVoteBtn.textContent = "vote for Catto"
+
+animals[1].append(catVoteBtn)
